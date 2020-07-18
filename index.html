@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gratis Radio</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel=stylesheet href=/css/index.css>
+    <link rel=manifest href=/manifest.json>
+    <meta name=viewport content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+    <h1>Gratis Radio</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <button type="button" class="btn btn-primary"
+                    data-url="http://streaming.radio.rtl2.fr/rtl2-mls-44-128">RTL2</button>
+            </div>
+            <div class="col-sm">
+                <button type="button" class="btn btn-primary" data-url="https://str0.creacast.com/topmusic_saverne">Top
+                    Music</button>
+            </div>
+            <div class="col-sm">
+                <button type="button" class="btn btn-primary"
+                    data-url="http://str0.creacast.com/virgin_sarrebourg">Virgin radio</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <button type="button" class="btn btn-primary"
+                    data-url="http://icecast.radiofrance.fr/franceinfo-midfi.mp3">France Info</button>
+            </div>
+            <div class="col-sm">
+                <button type="button" class="btn btn-primary"
+                    data-url="https://ais-live.cloud-services.paris:8443/rfm.mp3">RFM</button>
+            </div>
+            <div class="col-sm">
+                <button type="button" class="btn btn-primary"
+                    data-url="http://cdn.nrjaudio.fm/audio1/fr/40043/aac_64.mp3">Nostalgie</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <button type="button" class="btn btn-primary"
+                    data-url="http://cdn.nrjaudio.fm/audio1/fr/30201/mp3_128.mp3?origine=fluxradios">Cherie FM</button>
+            </div>
+            <div class="col-sm">
+                <button type="button" class="btn btn-primary" data-url="http://cdn.nrjaudio.fm/audio1/fr/30401/mp3_128.mp3?origine=fluxradios">Rire
+                    et chanson</button>
+            </div>
+            <div class="col-sm">
+                <button type="button" class="btn btn-primary"
+                    data-url="http://str0.creacast.com/virgin_sarrebourg">RTL</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <button type="button" class="btn btn-danger" id="stop">STOP</button>
+            </div>
+        </div>
+    </div>
+    <audio id="audio"></audio>
+    <script type=text/javascript src=/js/index.js></script>
+</body>
+
+</html>
