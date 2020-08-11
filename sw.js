@@ -1,6 +1,6 @@
 this.addEventListener('install', function (event) {
     event.waitUntil(
-        caches.open('gratis-radio-2').then(function (cache) {
+        caches.open('gratis-radio-3').then(function (cache) {
             return cache.addAll([
                 '/favicon.ico',
                 '/css/index.css',
@@ -40,7 +40,7 @@ this.addEventListener('fetch', function (event) {
 });
 
 this.addEventListener('activate', function (event) {
-    var cacheWhitelist = ['gratis-radio-2'];
+    var cacheWhitelist = ['gratis-radio-3'];
 
     event.waitUntil(
         caches.keys().then(function (keyList) {
