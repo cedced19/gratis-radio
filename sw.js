@@ -1,6 +1,6 @@
 this.addEventListener('install', function (event) {
     event.waitUntil(
-        caches.open('gratis-radio-5').then(function (cache) {
+        caches.open('gratis-radio-6').then(function (cache) {
             return cache.addAll([
                 '/favicon.ico',
                 '/css/index.css',
@@ -16,7 +16,7 @@ this.addEventListener('fetch', function (event) {
     }
     var get = function () {
         return fetch(event.request).then(function (response) {
-            return caches.open('gratis-radio-5').then(function (cache) {
+            return caches.open('gratis-radio-6').then(function (cache) {
                 cache.put(event.request, response.clone());
                 return response;
             });
@@ -40,7 +40,7 @@ this.addEventListener('fetch', function (event) {
 });
 
 this.addEventListener('activate', function (event) {
-    var cacheWhitelist = ['gratis-radio-5'];
+    var cacheWhitelist = ['gratis-radio-6'];
 
     event.waitUntil(
         caches.keys().then(function (keyList) {
